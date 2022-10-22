@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  
+
+  h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 34px;
+  }
+
+  p{
+    font-size: 14px;
+    opacity: .7;
+    line-height: 1.5rem;
+  }
+
+  button{
+    width: 8rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .firstCard button p {
+    color:hsl(31, 77%, 52%);
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  .secondCard button p {
+    color:hsl(184, 100%, 22%);
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  .thirdCard button p {
+    color:hsl(179, 100%, 13%);
+    opacity: 1;
+    font-size: 14px;
+  }
+
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    min-height: 100vh;
+  }
+
+  .container:first-child{
+    margin-top: 1rem;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2.5rem;
+    height: 25rem;
+    width: 70vw;
+  }
+
+  .firstCard{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .secondCard{
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .thirdCard{
+    background-color: hsl(179, 100%, 13%);
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+
+  @media screen and (min-width: 800px){
+    .container{
+        flex-direction: row;
+      }
+    
+      .container:first-child{
+        margin-top: 0;
+      }
+    
+      .card{
+        height: 50vh;
+        max-width: 17rem;
+      }
+    
+      .firstCard{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+      }
+    
+      .secondCard{
+        background-color: hsl(184, 100%, 22%);
+      }
+    
+      .thirdCard{
+        background-color: hsl(179, 100%, 13%);
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      button{
+        width: 8rem;
+        margin-top: 2rem;
+      }
+  }
+
+
+
+  
